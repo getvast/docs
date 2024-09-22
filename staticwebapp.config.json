@@ -1,0 +1,8 @@
+{
+    "forwardingGateway": {
+        "allowedForwardedHosts": [
+            "getvast.app",
+            "www.getvast.app"
+        ]
+    }
+}
