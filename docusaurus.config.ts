@@ -71,6 +71,7 @@ const config: Config = {
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
+        href: "https://www.getvast.app",
       },
       items: [
         {
