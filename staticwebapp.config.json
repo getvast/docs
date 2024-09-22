@@ -1,4 +1,10 @@
 {
+    "routes": [
+        {
+            "route": "/assets/*",
+            "rewrite": "/docs/assets/*"
+        }
+    ],
     "forwardingGateway": {
         "allowedForwardedHosts": [
             "getvast.app",
