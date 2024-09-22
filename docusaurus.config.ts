@@ -3,9 +3,9 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  title: "Vast Docs",
+  tagline: "Learn how Vast helps to build web APIs in a fraction of the time.",
+  favicon: "img/favicon.png",
 
   // Set the production url of your site here
   url: "https://www.getvast.app",
@@ -67,18 +67,20 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      // title: "Vast Docs",
       logo: {
-        alt: "My Site Logo",
+        alt: "Vast Logo",
         src: "img/logo.svg",
+        srcDark: "img/logo-inverted.svg",
         href: "https://www.getvast.app",
+        target: "_self",
       },
       items: [
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
