@@ -1,0 +1,7 @@
+{
+  "label": "Tutorials",
+  "link": {
+    "type": "generated-index",
+    "description": "Step-by-step guides on common programming scenarios."
+  }
+}

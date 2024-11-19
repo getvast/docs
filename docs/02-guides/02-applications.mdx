@@ -1,0 +1,77 @@
+import Image from '@site/src/components/Image';
+
+import CreateApp from "./assets/guides-apps-create.png";
+import CreateApp2x from "./assets/guides-apps-create@2x.png";
+import CreateAppZoom from "./assets/guides-apps-create@3x.png";
+
+import AppMenuDetails from "./assets/guides-apps-menu-details.png";
+import AppMenuDetails2x from "./assets/guides-apps-menu-details@2x.png";
+import AppMenuDetailsZoom from "./assets/guides-apps-menu-details@3x.png";
+
+import AppDependency from "./assets/guides-apps-dependency.png";
+import AppDependency2x from "./assets/guides-apps-dependency@2x.png";
+import AppDependencyZoom from "./assets/guides-apps-dependency@3x.png";
+
+import AppDependencyConfig from "./assets/guides-apps-dependency-config.png";
+import AppDependencyConfig2x from "./assets/guides-apps-dependency-config@2x.png";
+import AppDependencyConfigZoom from "./assets/guides-apps-dependency-config@3x.png";
+
+
+
+# Applications
+
+## Creating Applications
+To create an application, open a Vast workspace and click on the plus icon in the left-hand Explorer window and select **New Application**:
+<Image
+  alt="Create an application"
+  src={CreateApp}
+  retinaSrc={CreateApp2x}
+  zoomSrc={CreateAppZoom}
+/>
+
+
+In the dialog that appears, enter a name for your application and click **Save**.
+
+
+## Managing Application Details
+You can specify additional information about an application like a Readme file, icon and author. 
+To see this information, right click on the application in the Explorer and select **Details**:
+
+<Image
+  alt="Managing application details"
+  src={AppMenuDetails}
+  retinaSrc={AppMenuDetails2x}
+  zoomSrc={AppMenuDetailsZoom}
+/>
+
+
+## Configuring Dependencies
+
+Applications can depend on other [libraries](./03-libraries.md). To add a dependency, right click on the application in the Explorer and select **Dependencies**. 
+
+A screen will appear that lists any existing dependencies and allows you to add more by clicking on the **plus +** button:
+
+<Image
+  alt="Application dependencies"
+  src={AppDependency}
+  retinaSrc={AppDependency2x}
+  zoomSrc={AppDependencyZoom}
+/>
+
+Each dependency may have its own configuration settings. For example, a library that manages users may have settings to enable or disable Github and Facebook login methods. To configure a dependency, select it in the list and edit the settings in the right-hand sidebar:
+
+<Image
+  alt="Application dependency configuration"
+  src={AppDependencyConfig}
+  retinaSrc={AppDependencyConfig2x}
+  zoomSrc={AppDependencyConfigZoom}
+/>
+
+
+
+## Defining Application Environment Variables
+
+
+## Running an Application
+
+## Deleting Applications

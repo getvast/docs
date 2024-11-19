@@ -1,0 +1,77 @@
+import Image from '@site/src/components/Image';
+
+import LetsGetStartedImage from "./assets/guides-workspaces-lets-get-started.png";
+import LetsGetStartedImage2x from "./assets/guides-workspaces-lets-get-started@2x.png";
+import LetsGetStartedImageZoom from "./assets/guides-workspaces-lets-get-started@3x.png";
+
+import CreateWorkspaceImage from "./assets/guides-workspaces-create-workspace.png";
+import CreateWorkspaceImage2x from "./assets/guides-workspaces-create-workspace@2x.png";
+import CreateWorkspaceImageZoom from "./assets/guides-workspaces-create-workspace@3x.png";
+
+import InstallingImage from "./assets/guides-workspaces-installing.png";
+import InstallingImage2x from "./assets/guides-workspaces-installing@2x.png";
+import InstallingImageZoom from "./assets/guides-workspaces-installing@3x.png";
+
+
+# Workspaces
+
+A Workspace in Vast is a folder on your machine that contains all the code required to build your applications, libraries and nested resources.
+
+## When to Create a Workspace
+
+Workspaces are able to comprise multiple apps (APIs) and libraries. This allows you to reuse common code and prevent duplication. However, there are times where you may want to split your code into separate workspaces:
+
+1. You are working on completely separate projects that don't have any overlap
+2. You want to track changes in separate Git repositories
+
+## Creating a Workspace
+
+To create a new workspace, open a new window in Vast Studio and make sure you are logged in. Click on the **New Workspace** button:
+
+<Image
+  alt="Let's get started"
+  src={LetsGetStartedImage}
+  retinaSrc={LetsGetStartedImage2x}
+  zoomSrc={LetsGetStartedImageZoom}
+/>
+
+A dialog will appear asking for more information about your workspace:
+
+<Image alt="Create a workspace" src={CreateWorkspaceImage} retinaSrc={CreateWorkspaceImage2x} zoomSrc={CreateWorkspaceImageZoom} />
+
+Give your workspace a name. A folder will be created on your machine with this name, and the workspace will be initialized with a single application of the same name.
+
+Choose the programming language to use for your workspace. Currently Vast supports NestJS (Typescript), but more may be added in the future.
+
+Choose a location to store your workspace. This is usually a location where you keep your other Git repositories and codebases. The workspace will be created as a subfolder of this location.
+
+When you're happy with the details, click the **Create** button. Vast will begin to create your workspace and a progress dialog will appear:
+
+<Image
+  alt="Wait for the workspace to install"
+  src={InstallingImage}
+  retinaSrc={InstallingImage2x}
+  zoomSrc={InstallingImageZoom}
+/>
+
+During this phase, Vast Studio is creating all the boilerplate code required to run your workspace. It also installs all dependencies, which may take a couple of minutes. Please be patient!
+
+## Opening a Workspace in an IDE
+
+A Vast workspace is just a folder of files on your machine, so you can open it in your favorite IDE and edit it like a normal code project. You can even have your IDE and Vast open at the same time and switch between them seamlessly. Any changes made in your IDE will update in Vast instantly and vice versa.
+
+## Working with Version Control
+
+Vast lets you use your prefered version control tool to manage changes to your workspace. You can use Git, Mercurial, or any other tool that you like. For example, to initialize your workspace as a Git repository, open the workspace folder in your terminal and type the following commands:
+
+```bash
+$ git init
+$ git add .
+$ git commit -m "Initial commit"
+```
+
+Your workspace is now a Git repository and you can track changes just like a normal code project!
+
+## Deleting a Workspace
+
+To delete a workspace, simply delete the folder from the file system.
