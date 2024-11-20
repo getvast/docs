@@ -2,7 +2,9 @@
 
 ## Intro to Vast Studio
 
-INSERT VIDEO
+:::note
+Demo video coming soon!
+:::
 
 ## Join the Community
 
