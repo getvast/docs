@@ -1,0 +1,60 @@
+import Image from '@site/src/components/Image';
+
+import CreateController from "./assets/guides-controllers-create.png";
+import CreateController2x from "./assets/guides-controllers-create@2x.png";
+import CreateControllerZoom from "./assets/guides-controllers-create@3x.png";
+
+import RenameController from "./assets/guides-controllers-rename.png";
+import RenameController2x from "./assets/guides-controllers-rename@2x.png";
+import RenameControllerZoom from "./assets/guides-controllers-rename@3x.png";
+
+import RenameControllerTitle from "./assets/guides-controllers-rename-title.png";
+import RenameControllerTitle2x from "./assets/guides-controllers-rename-title@2x.png";
+import RenameControllerTitleZoom from "./assets/guides-controllers-rename-title@3x.png";
+
+
+# Controllers
+Controllers are groupings of related routes that handle specific parts of your application's functionality.
+
+
+## Creating Controllers
+To create a controller, open a Vast workspace and click on the plus icon next to an application or library in the left-hand Explorer window and select **New Controller...**:
+<Image
+  alt="Create a controller"
+  src={CreateController}
+  retinaSrc={CreateController2x}
+  zoomSrc={CreateControllerZoom}
+/>
+
+
+In the dialog that appears, enter a name for your controller and click **Save**.
+
+:::tip
+The name you assign to a controller will form part of the URL path for the routes it contains. For example, all routes inside a controller named `products` will be prefixed with `/products`.
+:::
+
+## Renaming Controllers
+To rename a controller, click the ellipsis icon next to the controller in the Explorer and select **Rename**:
+
+<Image
+  alt="Rename a controller"
+  src={RenameController}
+  retinaSrc={RenameController2x}
+  zoomSrc={RenameControllerZoom}
+/>
+
+
+Enter the new name and click **Save**.
+
+You can also rename a controller by clicking on the title and typing a new name:
+
+<Image
+  alt="Rename a controller title"
+  src={RenameControllerTitle}
+  retinaSrc={RenameControllerTitle2x}
+  zoomSrc={RenameControllerTitleZoom}
+/>
+
+
+## Deleting Controllers
+A controller can be deleted by hovering over it in the Explorer, clicking the ellipsis icon and selecting **Delete**.

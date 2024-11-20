@@ -1,0 +1,91 @@
+import Image from '@site/src/components/Image';
+
+import CreateLib from "./assets/guides-apps-create.png";
+import CreateLib2x from "./assets/guides-apps-create@2x.png";
+import CreateLibZoom from "./assets/guides-apps-create@3x.png";
+
+
+import LibMenuDetails from "./assets/guides-apps-menu-details.png";
+import LibMenuDetails2x from "./assets/guides-apps-menu-details@2x.png";
+import LibMenuDetailsZoom from "./assets/guides-apps-menu-details@3x.png";
+
+import LibDependency from "./assets/guides-apps-dependency.png";
+import LibDependency2x from "./assets/guides-apps-dependency@2x.png";
+import LibDependencyZoom from "./assets/guides-apps-dependency@3x.png";
+
+import LibDependencyConfig from "./assets/guides-apps-dependency-config.png";
+import LibDependencyConfig2x from "./assets/guides-apps-dependency-config@2x.png";
+import LibDependencyConfigZoom from "./assets/guides-apps-dependency-config@3x.png";
+
+import LibConfig from "./assets/guides-libs-configuration.png";
+import LibConfig2x from "./assets/guides-libs-configuration@2x.png";
+import LibConfigZoom from "./assets/guides-libs-configuration@3x.png";
+
+
+
+# Libraries
+Libraries are reusable modules that can be shared across apps in your workspace. They allow you to extract common functionality, such as utilities or shared business logic, into a centralized location.
+
+## Creating Libraries
+To create a library, open a Vast workspace and click on the plus icon in the left-hand Explorer window and select **New Library...**:
+<Image
+  alt="Create a library"
+  src={CreateLib}
+  retinaSrc={CreateLib2x}
+  zoomSrc={CreateLibZoom}
+/>
+
+In the dialog that appears, enter a name for your library and click **Save**.
+
+## Managing Library Details
+You can specify additional information about a library like a Readme file, icon and author. 
+To see this information, right click on the library in the Explorer and select **Details**:
+
+<Image
+  alt="Managing library details"
+  src={LibMenuDetails}
+  retinaSrc={LibMenuDetails2x}
+  zoomSrc={LibMenuDetailsZoom}
+/>
+
+## Configuring Dependencies
+
+Libraries can depend on other libraries. To add a dependency, right click on the library in the Explorer and select **Dependencies**. 
+
+A screen will appear that lists any existing dependencies and allows you to add more by clicking on the **plus +** button:
+
+<Image
+  alt="Library dependencies"
+  src={LibDependency}
+  retinaSrc={LibDependency2x}
+  zoomSrc={LibDependencyZoom}
+/>
+
+Each dependency may have its own configuration settings. For example, a library that manages users may have settings to enable or disable Github and Facebook login methods. To configure a dependency, select it in the list and edit the settings in the right-hand sidebar:
+
+<Image
+  alt="Library dependency configuration"
+  src={LibDependencyConfig}
+  retinaSrc={LibDependencyConfig2x}
+  zoomSrc={LibDependencyConfigZoom}
+/>
+
+
+## Defining Library Configuration Settings
+When authoring a library you may want to provide configuration options so that consumers can customize its behaviour. For example, a library that manages users may have settings to enable or disable Github and Facebook login methods.
+
+To define configuration settings for your library, right click on the library in the Explorer and select **Configuration**.
+
+<Image
+  alt="Library configuration settings"
+  src={LibConfig}
+  retinaSrc={LibConfig2x}
+  zoomSrc={LibConfigZoom}
+/>
+
+## Renaming Libraries
+It's not currently possible to rename a library through Vast, but you can manually rename the library through your IDE.
+
+## Deleting Libraries
+
+A library can be deleted by right-clicking on the library in the Explorer and selecting **Delete**.

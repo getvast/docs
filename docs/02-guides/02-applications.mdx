@@ -16,12 +16,18 @@ import AppDependencyConfig from "./assets/guides-apps-dependency-config.png";
 import AppDependencyConfig2x from "./assets/guides-apps-dependency-config@2x.png";
 import AppDependencyConfigZoom from "./assets/guides-apps-dependency-config@3x.png";
 
+import AppConfig from "./assets/guides-apps-configuration.png";
+import AppConfig2x from "./assets/guides-apps-configuration@2x.png";
+import AppConfigZoom from "./assets/guides-apps-configuration@3x.png";
+
 
 
 # Applications
 
+An app (or application) is the part of your workspace that gets deployed. Once deployed, each app typically has its own domain name and serves a specific purpose.
+
 ## Creating Applications
-To create an application, open a Vast workspace and click on the plus icon in the left-hand Explorer window and select **New Application**:
+To create an application, open a Vast workspace and click on the plus icon in the left-hand Explorer window and select **New Application...**:
 <Image
   alt="Create an application"
   src={CreateApp}
@@ -47,7 +53,7 @@ To see this information, right click on the application in the Explorer and sele
 
 ## Configuring Dependencies
 
-Applications can depend on other [libraries](./03-libraries.md). To add a dependency, right click on the application in the Explorer and select **Dependencies**. 
+Applications can depend on other [libraries](./03-libraries.mdx). To add a dependency, right click on the application in the Explorer and select **Dependencies**. 
 
 A screen will appear that lists any existing dependencies and allows you to add more by clicking on the **plus +** button:
 
@@ -70,8 +76,34 @@ Each dependency may have its own configuration settings. For example, a library 
 
 
 ## Defining Application Environment Variables
+When running your application you may want it to behave differently in development versus production. Environment Variables are a way to set values that can be accessed by your application at runtime. They can be used to store sensitive information like API keys or to configure your application for different environments.
+
+To define environment variables for your application, right click on the application in the Explorer and select **Configuration**.
+
+<Image
+  alt="Application environment variable configuration"
+  src={AppConfig}
+  retinaSrc={AppConfig2x}
+  zoomSrc={AppConfigZoom}
+/>
+
+:::note
+While you can set Environment Variables in Vast, they are not used anywhere. To use them, open your workspace in your IDE and implement your own logic.
+:::
+
 
 
 ## Running an Application
+Each application can be run as as service either on your machine or deployed to your preferred hosting provider. The steps to run an application will depend on the language your workspace uses. For NestJS workspaces, you can run an application by executing the following command in the terminal:
+
+```bash
+$ npm run start:dev
+```
+
+## Renaming Applications
+It's not currently possible to rename a library through Vast, but you can manually rename the library through your IDE.
+
 
 ## Deleting Applications
+
+An application can be deleted by right-clicking on the application in the Explorer and selecting **Delete**.

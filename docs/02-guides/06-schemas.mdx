@@ -1,0 +1,70 @@
+import Image from '@site/src/components/Image';
+
+import SchemaCreate from "./assets/guides-schemas-create.png";
+import SchemaCreate2x from "./assets/guides-schemas-create@2x.png";
+import SchemaCreateZoom from "./assets/guides-schemas-create@3x.png";
+
+import PropRename from "./assets/guides-schemas-prop-rename.png";
+import PropRename2x from "./assets/guides-schemas-prop-rename@2x.png";
+import PropRenameZoom from "./assets/guides-schemas-prop-rename@3x.png";
+
+import PropValidation from "./assets/guides-schemas-prop-validation.png";
+import PropValidation2x from "./assets/guides-schemas-prop-validation@2x.png";
+import PropValidationZoom from "./assets/guides-schemas-prop-validation@3x.png";
+
+
+# Schemas
+Schemas define the structure and validation rules for the data used in your application. They ensure that incoming data meets the required specifications, providing a consistent and reliable way to manage information.
+
+## Creating Schemas
+To create a schema, open a Vast workspace and click on the plus icon next to an application or library in the left-hand Explorer window and select **New Schema...**:
+<Image
+  alt="Create a schema"
+  src={SchemaCreate}
+  retinaSrc={SchemaCreate2x}
+  zoomSrc={SchemaCreateZoom}
+/>
+
+
+In the dialog that appears, enter a name for your schema and click **Save**.
+
+
+## Creating Schemas Properties
+Once you've created a schema, you can add properties to define the data structure. Click on the schema in the Explorer to open the schema editor. Then click on the **+ New Property** button:
+
+### Property Name
+The title of the property is displayed in the right-hand sidebar. You can click on this title to edit the property's name. This name must be unique to the schema. 
+
+
+### Property Data Type
+The data type of the property determines the kind of value it can store. You can choose from a variety of built-in data types, such as `string`, `number`, `boolean` or choose a nested schema to create a more complex data structure.
+
+### Property Validation
+You can define validation rules for the property to ensure that the data meets specific criteria. For example, for a `number` property you can specify a minimum or maximum value. For a `string` property, you can add an email or domain name validation rule.
+
+Some validation rules have settings. To change a setting, click on the rule in the right-hand sidebar. This will open a dialog where you can configure the rule's parameters:
+
+<Image
+  alt="Editing a validation rule"
+  src={PropValidation}
+  retinaSrc={PropValidation2x}
+  zoomSrc={PropValidationZoom}
+/>
+
+### Renaming Properties
+To rename a schema property, click on its title in the right-hand sidebar and type a new name:
+
+<Image
+  alt="Rename a schema property"
+  src={PropRename}
+  retinaSrc={PropRename2x}
+  zoomSrc={PropRenameZoom}
+/>
+
+### Deleting Properties
+A property can be deleted by clicking on the ellipsis icon in the heading of the right-hand sidebar and selecting **Delete**.
+
+
+## Deleting Schemas
+
+A schema can be deleted by hovering over it in the Explorer, clicking the ellipsis icon and selecting **Delete**.

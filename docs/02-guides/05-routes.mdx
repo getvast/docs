@@ -1,0 +1,100 @@
+import Image from '@site/src/components/Image';
+
+import RouteCreate from "./assets/guides-routes-create.png";
+import RouteCreate2x from "./assets/guides-routes-create@2x.png";
+import RouteCreateZoom from "./assets/guides-routes-create@3x.png";
+
+import RouteEdit from "./assets/guides-routes-edit.png";
+import RouteEdit2x from "./assets/guides-routes-edit@2x.png";
+import RouteEditZoom from "./assets/guides-routes-edit@3x.png";
+
+import RoutePathParams from "./assets/guides-routes-path-params.png";
+import RoutePathParams2x from "./assets/guides-routes-path-params@2x.png";
+import RoutePathParamsZoom from "./assets/guides-routes-path-params@3x.png";
+
+import RouteRename from "./assets/guides-routes-rename.png";
+import RouteRename2x from "./assets/guides-routes-rename@2x.png";
+import RouteRenameZoom from "./assets/guides-routes-rename@3x.png";
+
+
+# Routes
+
+Routes are the individual endpoints within a controller. Each route determines how a specific type of request (e.g., GET, POST, PUT, DELETE) is handled. They define the paths and parameters clients can use to interact with your API.
+
+## Creating Routes
+
+Routes must be created from inside a controller. Click on the **+ New Route** button:
+
+<Image
+  alt="Create a route"
+  src={RouteCreate}
+  retinaSrc={RouteCreate2x}
+  zoomSrc={RouteCreateZoom}
+/>
+
+
+## Configuring Routes
+
+To configure a route's name, path, method and other details, click on the route in the controller. This will open the route's settings in the right-hand panel:
+
+<Image
+  alt="Configure a route"
+  src={RouteEdit}
+  retinaSrc={RouteEdit2x}
+  zoomSrc={RouteEditZoom}
+/>
+
+### Route Name
+The title of the route is displayed in the right-hand sidebar. You can click on this title to edit the route's name. This name must be unique to the controller. 
+
+:::tip
+A route's name is just used for dislpay purposes in Vast Studio. It does not affect the route's URL path. We recommend using a descritive name like `createUser` or `getUserById` to make it easier to identify the route's purpose.
+:::
+
+### Route Path
+The Route's path determines the URL that clients will use to access the route. This path is relative to the controller's path. For example, if the controller's path is `/products`, and the route's path is `/create`, the full URL path will be `/products/create`.
+
+You can include parameters in the path using the syntax `:parameterName`. For example, a route path of `/products/:productId` would match a URL path of `/products/123`.
+
+Including parameters in the route path will add a section to the right-hand sidebar where you can define the parameter's data type:
+
+<Image
+  alt="Editing route path parameters"
+  src={RoutePathParams}
+  retinaSrc={RoutePathParams2x}
+  zoomSrc={RoutePathParamsZoom}
+/>
+
+
+### Route Method
+The route method determines the type of request that the route will handle. You can select from `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `OPTIONS`, `HEAD`, and `ALL`.
+
+
+### Request and Response Bodies
+You can define the input and output structure for your route by configuring the request and response bodies. These may be primitive data types (string, number, etc) or defined using [schemas](./06-schemas.mdx), which allows you to specify the required fields, data types, and validation rules for the data that the route will accept and return.
+
+### Route Querystring Parameters
+Querystring parameters are variables passed in the URL after a question mark characted. For example, in the URL `/products?category=electronics`, `category` is a querystring parameter.
+
+Vast Studio allows you to define querystring parameters as a [schema](./06-schemas.mdx), where each schema property corresponds to a valid querystring parameter.
+
+:::warning
+Querystring parameters do not support nested objects or arrays.
+:::
+
+## Renaming Routes
+To rename a route, click on its title in the right-hand sidebar and type a new name:
+
+<Image
+  alt="Rename a route"
+  src={RouteRename}
+  retinaSrc={RouteRename2x}
+  zoomSrc={RouteRenameZoom}
+/>
+
+## Defining Route Logic
+Vast Studio allows you to define the route's structure before switching to your code IDE to implement the business logic. Once your routes are built in Vast you have the flexibilty to implement the route logic using your prefered techniques and tools.
+
+
+## Deleting Routes
+A route can be deleted by clicking on the ellipsis icon in the heading of the right-hand sidebar and selecting **Delete**.
